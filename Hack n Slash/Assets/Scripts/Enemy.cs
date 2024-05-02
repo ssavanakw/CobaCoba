@@ -1,6 +1,6 @@
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour
     private bool isFacingRight = true;
     private bool isAttacking = false;
     private bool isAttackCooldown = false;
+    private bool isChasing = false;
 
     [Header("Target")]
     [SerializeField] private LayerMask playerLayer;
@@ -21,14 +22,15 @@ public class Enemy : MonoBehaviour
     [Header("Enemy Chase")]
     [SerializeField] private float chaseSpeed = 3f;
     [SerializeField] private float chaseRange = 3f;
+    [SerializeField] private float jumpPower = 10f;
+
     [SerializeField] private Vector2 chaseSize = new Vector2(5f, 5f);
 
     [Header("Enemy Attack")]
     [SerializeField] private float[] attackDamages; // Array to store damage amounts for each attack
     [SerializeField] private float[] attackCooldowns; // Array to store cooldowns for each attack
+    [SerializeField] private float[] attackRanges; // Array to store attack ranges for each attack
     [SerializeField] private float damageAmount = 10f;
-    [SerializeField] private float attackRange;
-    [SerializeField] private Vector2 attackSize = new Vector2(5f, 5f);
     [SerializeField] private string[] attackAnimationTriggers;
     [SerializeField] private Collider2D[] attackColliders; // Colliders for each attack animation
 
@@ -40,10 +42,6 @@ public class Enemy : MonoBehaviour
 
         // Initialize the nextAttackTimes array
         nextAttackTimes = new float[attackCooldowns.Length];
-        for (int i = 0; i < nextAttackTimes.Length; i++)
-        {
-            nextAttackTimes[i] = 0f;
-        }
     }
 
     void Update()
@@ -51,7 +49,7 @@ public class Enemy : MonoBehaviour
         cooldownTimer += Time.deltaTime;
 
         // Check if the player is within attack range
-        if (PlayerInRange(attackRange))
+        if (PlayerInRange(attackRanges))
         {
             // Stop moving if the player is within attack range
             StopChasing();
@@ -59,58 +57,67 @@ public class Enemy : MonoBehaviour
             // Attack if cooldown allows and the enemy is not already attacking
             if (!isAttacking && !isAttackCooldown)
             {
-                List<int> availableAttacks = new List<int>(); // List to store available attacks
-
-                for (int i = 0; i < attackAnimationTriggers.Length; i++)
+                int availableAttack = SelectAttack();
+                if (availableAttack != -1)
                 {
-                    if (cooldownTimer >= nextAttackTimes[i])
-                    {
-                        availableAttacks.Add(i); // Add the index of available attack to the list
-                    }
-                    else
-                    {
-                        Debug.Log("Attack " + (i + 1) + " is on cooldown.");
-                    }
-                }
-
-                // Check if there are available attacks
-                if (availableAttacks.Count > 0)
-                {
-                    int randomIndex = UnityEngine.Random.Range(0, availableAttacks.Count); // Select a random index from available attacks
-                    int selectedAttackIndex = availableAttacks[randomIndex]; // Get the selected attack index
-
-                    Attack(attackAnimationTriggers[selectedAttackIndex], selectedAttackIndex); // Pass the selected index to Attack method
-                    nextAttackTimes[selectedAttackIndex] = cooldownTimer + attackCooldowns[selectedAttackIndex];
+                    Attack(availableAttack);
+                    nextAttackTimes[availableAttack] = cooldownTimer + attackCooldowns[availableAttack];
                     isAttackCooldown = true;
-                    StartCoroutine(ResetAttackCooldown(attackCooldowns[selectedAttackIndex])); // Reset cooldown based on individual cooldown time
+                    StartCoroutine(ResetAttackCooldown(availableAttack));
                 }
             }
         }
         else if (PlayerInRange(chaseRange))
         {
             // Continue chasing if the player is within chase range
+            isChasing = true;
             ChasePlayer();
         }
         else
         {
             // If player is neither in attack nor chase range, stop moving
             StopChasing();
+            isChasing = false;
         }
 
         UpdateAnimation();
     }
 
-
-    private IEnumerator ResetAttackCooldown(float cooldownTime)
+    private int SelectAttack()
     {
-        yield return new WaitForSeconds(cooldownTime);
+        for (int i = 0; i < attackAnimationTriggers.Length; i++)
+        {
+            if (cooldownTimer >= nextAttackTimes[i])
+            {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    private IEnumerator ResetAttackCooldown(int index)
+    {
+        yield return new WaitForSeconds(attackCooldowns[index]);
         isAttackCooldown = false;
+    }
+
+    private bool PlayerInRange(float[] ranges)
+    {
+        foreach (float range in ranges)
+        {
+            Collider2D hitCollider = Physics2D.OverlapBox(transform.position, new Vector2(range * 3 / 2, range * 3 / 2), 0f, playerLayer);
+            if (hitCollider != null)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
     private bool PlayerInRange(float range)
     {
-        Collider2D[] hitColliders = Physics2D.OverlapBoxAll(transform.position, new Vector2(range * 2, range * 2), 0f, playerLayer);
-        return hitColliders.Length > 0;
+        Collider2D hitCollider = Physics2D.OverlapBox(transform.position, new Vector2(range * 3 / 2, range * 3 / 2), 0f, playerLayer);
+        return hitCollider != null;
     }
 
     private void ChasePlayer()
@@ -122,17 +129,29 @@ public class Enemy : MonoBehaviour
         {
             Flip();
         }
+
+        // Check if the enemy is grounded
+        bool isGrounded = Physics2D.Raycast(transform.position, Vector2.down, 0.1f, playerLayer);
+
+        // Jump towards the player if the enemy is grounded and the player's y position is higher
+        if (isGrounded && direction.y > 0.1f)
+        {
+            // Apply jump force
+            rb.velocity = new Vector2(rb.velocity.x, 0f); // Reset y velocity to avoid double jumping
+            rb.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
+        }
     }
+
 
     private void StopChasing()
     {
         rb.velocity = new Vector2(0f, rb.velocity.y);
     }
 
-    private void Attack(string attackAnimationTrigger, int index)
+    private void Attack(int index)
     {
         isAttacking = true;
-        anim.SetTrigger(attackAnimationTrigger);
+        anim.SetTrigger(attackAnimationTriggers[index]);
         cooldownTimer = 0f;
 
         // Set damage amount for the corresponding attack
@@ -144,24 +163,11 @@ public class Enemy : MonoBehaviour
         {
             Debug.LogError("Invalid attack animation trigger or damage index!");
         }
-
-        // Activate the collider corresponding to the current attack animation
-        for (int i = 0; i < attackAnimationTriggers.Length; i++)
-        {
-            if (attackAnimationTriggers[i] == attackAnimationTrigger)
-            {
-                attackColliders[i].enabled = true;
-            }
-            else
-            {
-                attackColliders[i].enabled = false;
-            }
-        }
     }
 
     public void AttackPlayerFromAnimationEvent()
     {
-        if (PlayerInRange(attackRange) && playerHealth != null)
+        if (PlayerInRange(attackRanges) && playerHealth != null)
         {
             playerHealth.TakeDamage(damageAmount);
         }
@@ -177,17 +183,21 @@ public class Enemy : MonoBehaviour
 
     private void UpdateAnimation()
     {
-        anim.SetBool("moving", Mathf.Abs(rb.velocity.x) > 0.1f);
+        anim.SetBool("moving", Mathf.Abs(rb.velocity.x) > 0.1f || Mathf.Abs(rb.velocity.y) > 0.1f);
+        anim.SetBool("chasing", isChasing);
     }
 
     private void OnDrawGizmosSelected()
     {
-        // Draw wire box for chase range
+        // Draw wire cube for chase range
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(transform.position, new Vector3(chaseSize.x, chaseSize.y, 0f));
 
-        // Draw wire box for attack range
+        // Draw wire cube for attack range
         Gizmos.color = Color.blue;
-        Gizmos.DrawWireCube(transform.position, new Vector3(attackSize.x, attackSize.y, 0f));
+        foreach (float range in attackRanges)
+        {
+            Gizmos.DrawWireCube(transform.position, new Vector3(range * 3 / 2, range * 3 / 2, 0f));
+        }
     }
 }
