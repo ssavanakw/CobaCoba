@@ -11,7 +11,9 @@ public class EnemiesPatrol : MonoBehaviour
     private Animator anim;
     private Transform currentPoint;
     public float speed;
+    public float idleTime = 2f; // Time to idle at each point
 
+    private bool isWaiting = false;
 
     void Start()
     {
@@ -21,32 +23,30 @@ public class EnemiesPatrol : MonoBehaviour
         anim.SetBool("isWalk", true);
     }
 
-    
     void Update()
     {
-        Vector2 point = currentPoint.position - transform.position;
-        if(currentPoint == pointB.transform)
+        if (!isWaiting)
         {
-            rb.velocity = new Vector2(speed, 0);
-        }
-        else
-        {
-            rb.velocity = new Vector2 (-speed, 0);
-        }
+            Vector2 point = currentPoint.position - transform.position;
+            if (currentPoint == pointB.transform)
+            {
+                rb.velocity = new Vector2(speed, 0);
+            }
+            else
+            {
+                rb.velocity = new Vector2(-speed, 0);
+            }
 
-        if(Vector2.Distance(transform.position, currentPoint.position)< 0.5f && currentPoint == pointB.transform)
-        {
-            flip();
-            currentPoint = pointA.transform;
+            if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == pointB.transform)
+            {
+                StartCoroutine(WaitAtPoint(pointA.transform));
+            }
+            else if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == pointA.transform)
+            {
+                StartCoroutine(WaitAtPoint(pointB.transform));
+            }
         }
-        if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == pointA.transform)
-        {
-            flip();
-            currentPoint = pointB.transform;
-        }
-
     }
-
 
     private void flip()
     {
@@ -55,17 +55,24 @@ public class EnemiesPatrol : MonoBehaviour
         transform.localScale = localScale;
     }
 
+    private IEnumerator WaitAtPoint(Transform nextPoint)
+    {
+        isWaiting = true;
+        anim.SetBool("isWalk", false); // Set idle animation
+        rb.velocity = Vector2.zero;
+
+        yield return new WaitForSeconds(idleTime);
+
+        anim.SetBool("isWalk", true); // Resume walking animation
+        flip();
+        currentPoint = nextPoint;
+        isWaiting = false;
+    }
+
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(pointA.transform.position, 0.5f);
         Gizmos.DrawWireSphere(pointB.transform.position, 0.5f);
         Gizmos.DrawLine(pointA.transform.position, pointB.transform.position);
-
     }
-
-
-
-
-
-
 }
