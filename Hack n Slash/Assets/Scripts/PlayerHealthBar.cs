@@ -8,7 +8,7 @@ public class PlayerHealthBar : MonoBehaviour
     [Header("Health Bar")]
     [SerializeField] public Slider healthSlider; // Reference to the slider UI component
     [SerializeField] private float maxHealth = 100f; // Maximum health of the player
-    [SerializeField] private float currentHealth; // Current health of the player
+    [SerializeField] public float currentHealth; // Current health of the player
 
 
     // Start is called before the first frame update
