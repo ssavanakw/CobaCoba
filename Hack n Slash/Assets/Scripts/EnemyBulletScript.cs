@@ -6,7 +6,10 @@ public class EnemyBulletScript : MonoBehaviour
 {
     private GameObject player;
     private Rigidbody2D rb;
+
+    public float damage = 10;
     public float speed;
+
     private float timer;
 
     // Start is called before the first frame update
@@ -41,12 +44,14 @@ public class EnemyBulletScript : MonoBehaviour
             PlayerHealthBar playerHealth = other.gameObject.GetComponent<PlayerHealthBar>();
             if (playerHealth != null)
             {
-                playerHealth.TakeDamage(10); // Use the TakeDamage method
+                playerHealth.TakeDamage(damage); // Use the TakeDamage method
             }
             //other.gameObject.GetComponent<PlayerHealthBar>().currentHealth -= 10;
             Destroy(gameObject);
         }
-        else if (other.gameObject.layer == LayerMask.NameToLayer("Ground") || other.gameObject.layer == LayerMask.NameToLayer("Wall"))
+        else if (other.gameObject.layer == LayerMask.NameToLayer("Ground") || 
+            other.gameObject.layer == LayerMask.NameToLayer("Wall") || 
+            other.gameObject.layer == LayerMask.NameToLayer("Roof"))
         {
             Destroy(gameObject);
         }
