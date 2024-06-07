@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 21bc098cc07b0834b8ba260bff5c2479
+guid: e5a2b06e6e94dfa458188980e4ed2bc3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,11 +110,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite-0003 MC soul move_0
+      name: Sprite-0003 MC idle_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 100
+        y: 60
         width: 64
         height: 64
       alignment: 0
@@ -124,18 +124,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba619d3256cbfba49971fce1e025df16
-      internalID: -1953838831
+      spriteID: a0f1095ea5bf633478d0908d7f19d43e
+      internalID: 6986500
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0003 MC soul move_1
+      name: Sprite-0003 MC idle_1
       rect:
         serializedVersion: 2
         x: 64
-        y: 100
+        y: 60
         width: 64
         height: 64
       alignment: 0
@@ -145,29 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3703ba05be28fc841b65f93b51c5be09
-      internalID: -2084916340
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-0003 MC soul move_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 100
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 61a8acca392037849b68550bd256fbe5
-      internalID: -808227843
+      spriteID: 045162900cb977c4bb20e7045a2d5e4b
+      internalID: 1185552602
       vertices: []
       indices: 
       edges: []
@@ -183,9 +162,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sprite-0003 MC soul move_0: -1953838831
-      Sprite-0003 MC soul move_1: -2084916340
-      Sprite-0003 MC soul move_2: -808227843
+      Sprite-0003 MC idle_0: 6986500
+      Sprite-0003 MC idle_1: 1185552602
+      Sprite-0003 MC idle_2: 1694501224
+      Sprite-0003 MC idle_3: 1213743416
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 21bc098cc07b0834b8ba260bff5c2479
+guid: 8191b6cbd4dd77a4d81db542a9b48a60
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,11 +110,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite-0003 MC soul move_0
+      name: Sprite-0003 MC jump_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 100
+        y: 60
         width: 64
         height: 64
       alignment: 0
@@ -124,18 +124,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba619d3256cbfba49971fce1e025df16
-      internalID: -1953838831
+      spriteID: 8f7e4a0d15ad5f249a26cf6d3e5b9172
+      internalID: -211186545
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0003 MC soul move_1
+      name: Sprite-0003 MC jump_1
       rect:
         serializedVersion: 2
         x: 64
-        y: 100
+        y: 60
         width: 64
         height: 64
       alignment: 0
@@ -145,18 +145,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3703ba05be28fc841b65f93b51c5be09
-      internalID: -2084916340
+      spriteID: f8ce5e053924f1549bc25ab054e985aa
+      internalID: -386298032
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0003 MC soul move_2
+      name: Sprite-0003 MC jump_2
       rect:
         serializedVersion: 2
         x: 128
-        y: 100
+        y: 60
         width: 64
         height: 64
       alignment: 0
@@ -166,8 +166,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61a8acca392037849b68550bd256fbe5
-      internalID: -808227843
+      spriteID: e7e0964ac0467ec418725986d522eb9a
+      internalID: 578023514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-0003 MC jump_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 60
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f61b072154393847bee832034ed69cc
+      internalID: 1223370982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-0003 MC jump_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 60
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898c9cde190e2cd438ab2132a3eeb0ed
+      internalID: -1396166620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-0003 MC jump_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 60
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce6aa0ef8cc0a74db3cbec0dca671ff
+      internalID: -1340026272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-0003 MC jump_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 60
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eaf92af5a542c64fa715a8a8fe18876
+      internalID: -1327544396
       vertices: []
       indices: 
       edges: []
@@ -183,9 +267,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sprite-0003 MC soul move_0: -1953838831
-      Sprite-0003 MC soul move_1: -2084916340
-      Sprite-0003 MC soul move_2: -808227843
+      Sprite-0003 MC jump_0: -211186545
+      Sprite-0003 MC jump_1: -386298032
+      Sprite-0003 MC jump_10: -1499618607
+      Sprite-0003 MC jump_11: -1786580717
+      Sprite-0003 MC jump_12: 1261144950
+      Sprite-0003 MC jump_13: 2020196647
+      Sprite-0003 MC jump_2: 578023514
+      Sprite-0003 MC jump_3: 1223370982
+      Sprite-0003 MC jump_4: -1396166620
+      Sprite-0003 MC jump_5: -1340026272
+      Sprite-0003 MC jump_6: -1327544396
+      Sprite-0003 MC jump_7: 1349426630
+      Sprite-0003 MC jump_8: 1444401124
+      Sprite-0003 MC jump_9: 1628682015
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

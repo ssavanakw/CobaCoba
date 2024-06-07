@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 21bc098cc07b0834b8ba260bff5c2479
+guid: 90020edbaaab59c42bcb536cea0186ab
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,11 +110,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite-0003 MC soul move_0
+      name: Sprite-0003 MC atck_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 100
+        y: 60
         width: 64
         height: 64
       alignment: 0
@@ -124,18 +124,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba619d3256cbfba49971fce1e025df16
-      internalID: -1953838831
+      spriteID: 14ab5d5990270a24eb1ed6ccf6eca59c
+      internalID: 1133486765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0003 MC soul move_1
+      name: Sprite-0003 MC atck_1
       rect:
         serializedVersion: 2
         x: 64
-        y: 100
+        y: 60
         width: 64
         height: 64
       alignment: 0
@@ -145,18 +145,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3703ba05be28fc841b65f93b51c5be09
-      internalID: -2084916340
+      spriteID: e9dd5dbbbea8bb040a9ed085978e51e4
+      internalID: -1892349460
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0003 MC soul move_2
+      name: Sprite-0003 MC atck_2
       rect:
         serializedVersion: 2
         x: 128
-        y: 100
+        y: 60
         width: 64
         height: 64
       alignment: 0
@@ -166,8 +166,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61a8acca392037849b68550bd256fbe5
-      internalID: -808227843
+      spriteID: ac0bfd4341006cd498270e1ad191537f
+      internalID: -345469834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-0003 MC atck_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 60
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2031344b42de9a7419d80d4fd72d2d28
+      internalID: -356271178
       vertices: []
       indices: 
       edges: []
@@ -183,9 +204,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sprite-0003 MC soul move_0: -1953838831
-      Sprite-0003 MC soul move_1: -2084916340
-      Sprite-0003 MC soul move_2: -808227843
+      Sprite-0003 MC atck_0: 1133486765
+      Sprite-0003 MC atck_1: -1892349460
+      Sprite-0003 MC atck_2: -345469834
+      Sprite-0003 MC atck_3: -356271178
+      Sprite-0003 MC atck_4: 2106431800
+      Sprite-0003 MC atck_5: 810160390
+      Sprite-0003 MC atck_6: 983997334
+      Sprite-0003 MC atck_7: -1439777239
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

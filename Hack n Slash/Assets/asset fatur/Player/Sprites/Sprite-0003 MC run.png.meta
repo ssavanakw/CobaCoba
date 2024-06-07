@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 21bc098cc07b0834b8ba260bff5c2479
+guid: 087d1242719423944b38a4d7689b67cf
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,11 +110,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite-0003 MC soul move_0
+      name: Sprite-0003 MC run_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 100
+        y: 60
         width: 64
         height: 64
       alignment: 0
@@ -124,18 +124,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba619d3256cbfba49971fce1e025df16
-      internalID: -1953838831
+      spriteID: bc63b4155f9b1c249a6b57b67ec93901
+      internalID: 110248440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0003 MC soul move_1
+      name: Sprite-0003 MC run_1
       rect:
         serializedVersion: 2
         x: 64
-        y: 100
+        y: 60
         width: 64
         height: 64
       alignment: 0
@@ -145,18 +145,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3703ba05be28fc841b65f93b51c5be09
-      internalID: -2084916340
+      spriteID: b0d650117a5c63a4c86be369cc2caa49
+      internalID: -322653704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0003 MC soul move_2
+      name: Sprite-0003 MC run_2
       rect:
         serializedVersion: 2
         x: 128
-        y: 100
+        y: 60
         width: 64
         height: 64
       alignment: 0
@@ -166,8 +166,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61a8acca392037849b68550bd256fbe5
-      internalID: -808227843
+      spriteID: 745969d88cf8e224a8603bee70c0699d
+      internalID: -775066082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-0003 MC run_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 60
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617bb5a2975a79f42b95c503ff8358af
+      internalID: 483044106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-0003 MC run_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 60
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d3a8db24e9a634380a3b1ec346a145
+      internalID: -94616245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-0003 MC run_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 60
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300406d71ae2d7e49a791d60a9f872ca
+      internalID: -717177439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-0003 MC run_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 60
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30529552dfa972b40a6e323f41a9c940
+      internalID: -1243603042
       vertices: []
       indices: 
       edges: []
@@ -183,9 +267,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sprite-0003 MC soul move_0: -1953838831
-      Sprite-0003 MC soul move_1: -2084916340
-      Sprite-0003 MC soul move_2: -808227843
+      Sprite-0003 MC run_0: 110248440
+      Sprite-0003 MC run_1: -322653704
+      Sprite-0003 MC run_10: -1946940864
+      Sprite-0003 MC run_11: 1663240002
+      Sprite-0003 MC run_12: -1382610929
+      Sprite-0003 MC run_13: 1820754803
+      Sprite-0003 MC run_2: -775066082
+      Sprite-0003 MC run_3: 483044106
+      Sprite-0003 MC run_4: -94616245
+      Sprite-0003 MC run_5: -717177439
+      Sprite-0003 MC run_6: -1243603042
+      Sprite-0003 MC run_7: 212795460
+      Sprite-0003 MC run_8: 835890950
+      Sprite-0003 MC run_9: 1259919470
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
