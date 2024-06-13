@@ -30,6 +30,7 @@ public class EnemyBulletScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // if not triggered, it will disappear in 10sec
         timer += Time.deltaTime;
         if (timer > 10)
         {

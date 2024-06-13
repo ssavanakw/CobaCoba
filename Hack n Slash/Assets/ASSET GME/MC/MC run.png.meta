@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -114,9 +114,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 62
-        width: 43
-        height: 49
+        y: 60
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,9 +135,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 59
-        width: 44
-        height: 51
+        y: 60
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,8 +157,8 @@ TextureImporter:
         serializedVersion: 2
         x: 128
         y: 60
-        width: 45
-        height: 53
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,9 +177,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 61
-        width: 46
-        height: 50
+        y: 60
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: MC run_4
       rect:
         serializedVersion: 2
-        x: 257
-        y: 61
-        width: 45
-        height: 49
+        x: 256
+        y: 60
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +218,10 @@ TextureImporter:
       name: MC run_5
       rect:
         serializedVersion: 2
-        x: 321
-        y: 59
-        width: 45
-        height: 51
+        x: 320
+        y: 60
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +239,10 @@ TextureImporter:
       name: MC run_6
       rect:
         serializedVersion: 2
-        x: 386
-        y: 63
-        width: 44
-        height: 47
+        x: 384
+        y: 60
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,11 +269,18 @@ TextureImporter:
     nameFileIdTable:
       MC run_0: 1395399412
       MC run_1: 613378448
+      MC run_10: 2113158157
+      MC run_11: 1534144242
+      MC run_12: 1812474147
+      MC run_13: -1558947805
       MC run_2: 358979146
       MC run_3: -677796316
       MC run_4: -185475523
       MC run_5: 968459707
       MC run_6: -1080271354
+      MC run_7: 1391896368
+      MC run_8: -2051735992
+      MC run_9: -1835614917
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

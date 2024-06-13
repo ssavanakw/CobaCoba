@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d07beeb782024cb4d8227f6043533044
+guid: 99b2bf54b5d031d4f9573f4ed3b35c48
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,11 +110,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite-0003 MC soul idle_0
+      name: + frame atk_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 100
+        y: 60
         width: 64
         height: 64
       alignment: 0
@@ -124,71 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19cfbe5ae1777c84cadc0e8d71dc1b83
-      internalID: -1043335208
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-0003 MC soul idle_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 100
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 471678a05e51fa444a161321b2906229
-      internalID: 668270526
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-0003 MC soul idle_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 100
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1fbd2c5f2ab419d499feca38071c5fbc
-      internalID: 1514967922
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-0003 MC soul idle_3
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 100
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 707128a993caf13489d1ffa14c7a54f9
-      internalID: -677436482
+      spriteID: ea5337d151b3d384380e75d30e8b4450
+      internalID: -228057996
       vertices: []
       indices: 
       edges: []
@@ -204,10 +141,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sprite-0003 MC soul idle_0: -1043335208
-      Sprite-0003 MC soul idle_1: 668270526
-      Sprite-0003 MC soul idle_2: 1514967922
-      Sprite-0003 MC soul idle_3: -677436482
+      + frame atk_0: -228057996
+      + frame atk_1: 1792004574
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
