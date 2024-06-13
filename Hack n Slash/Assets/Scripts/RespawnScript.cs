@@ -6,6 +6,7 @@ public class RespawnScript : MonoBehaviour
 {
     public GameObject player;
     public GameObject respawnPoint;
+    public float damage;
 
     // Start is called before the first frame update
     void Start()
@@ -21,8 +22,20 @@ public class RespawnScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.CompareTag("Player"))
+        //if(other.gameObject.CompareTag("Player"))
+        //{
+
+        //    player.transform.position = respawnPoint.transform.position;
+        //}
+        if (other.gameObject.CompareTag("Player"))
         {
+            PlayerHealthBar playerHealth = other.gameObject.GetComponent<PlayerHealthBar>();
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(damage); // Use the TakeDamage method
+                
+            }
+            //other.gameObject.GetComponent<PlayerHealthBar>().currentHealth -= 10;
             player.transform.position = respawnPoint.transform.position;
         }
     }
