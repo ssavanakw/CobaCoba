@@ -6,11 +6,15 @@ public class CheckPointScript : MonoBehaviour
 {
     private RespawnScript respawn;
     private BoxCollider2D checkPointCollider;
+    private Animator animator;
+
+
 
     private void Awake()
     {
         checkPointCollider = GetComponent<BoxCollider2D>();
         respawn = GameObject.FindGameObjectWithTag("Respawn").GetComponent<RespawnScript>();
+        animator = GetComponent<Animator>();
     }
 
     // Start is called before the first frame update
@@ -31,6 +35,7 @@ public class CheckPointScript : MonoBehaviour
         {
             respawn.respawnPoint = this.gameObject;
             checkPointCollider.enabled = false;
+            animator.SetTrigger("Appear");
         }
     }
 
