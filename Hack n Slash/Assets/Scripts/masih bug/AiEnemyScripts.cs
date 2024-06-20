@@ -42,13 +42,12 @@ public class AiEnemyScript : MonoBehaviour
 
     [Header("PlayerDetect")]
     public Transform playerDetectPos;
-    public float playerDetectRadius = 2f;
+    public Vector2 playerDetectSize = new Vector2(2f, 2f); // Change detection size to a rectangle
     public float chasePlayerSpeed;
     public float stopChaseDistance = 1.5f; // Distance to stop chasing the player
     public LayerMask playerLayer;
     bool isPlayerDetected = false;
     Transform player;
-
 
     void Start()
     {
@@ -64,26 +63,27 @@ public class AiEnemyScript : MonoBehaviour
         isFrontGrounded = Physics2D.OverlapBox(frontGroundCheckPos.position, frontGroundCheckSize, 0f, groundLayer);
 
         // Check if player is detected
+        player = GameObject.FindGameObjectWithTag("Player")?.transform;
         if (player != null)
         {
             Vector3 playerPosition = player.position;
             Vector3 enemyPosition = transform.position;
 
-            // Ensure player is not directly below the enemy
+            // Check if the player is not directly below the enemy
             if (playerPosition.y < enemyPosition.y)
             {
                 isPlayerDetected = false;
             }
             else
             {
-                // Check circle overlap to detect player
-                isPlayerDetected = Physics2D.OverlapCircle(playerDetectPos.position, playerDetectRadius, playerLayer);
+                // Check box overlap to detect player
+                isPlayerDetected = Physics2D.OverlapBox(playerDetectPos.position, playerDetectSize, 0f, playerLayer);
             }
         }
         else
         {
             // Player is null, reset detection flag
-            isPlayerDetected = Physics2D.OverlapCircle(playerDetectPos.position, playerDetectRadius, playerLayer);
+            isPlayerDetected = Physics2D.OverlapBox(playerDetectPos.position, playerDetectSize, 0f, playerLayer);
         }
 
         if (isGrounded && jumpsRemaining < maxJumps)
@@ -108,6 +108,10 @@ public class AiEnemyScript : MonoBehaviour
                 player = GameObject.FindGameObjectWithTag("Player").transform;
                 StartCoroutine(ChasePlayer());
             }
+            else
+            {
+                LookAtPlayer(); // Continuously look at the player
+            }
         }
         else
         {
@@ -121,6 +125,16 @@ public class AiEnemyScript : MonoBehaviour
 
     void Move()
     {
+        if (isPlayerDetected && player != null)
+        {
+            float distance = Vector2.Distance(transform.position, player.position);
+            if (distance < stopChaseDistance)
+            {
+                rb.velocity = new Vector2(0, rb.velocity.y);
+                return;
+            }
+        }
+
         rb.velocity = new Vector2(moveSpeed * (isFacingRight ? 1 : -1), rb.velocity.y);
     }
 
@@ -145,6 +159,19 @@ public class AiEnemyScript : MonoBehaviour
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
+    }
+
+    void LookAtPlayer()
+    {
+        if (player == null) return;
+
+        Vector3 playerPosition = player.position;
+        Vector3 enemyPosition = transform.position;
+
+        if ((playerPosition.x > enemyPosition.x && !isFacingRight) || (playerPosition.x < enemyPosition.x && isFacingRight))
+        {
+            Flip();
+        }
     }
 
     IEnumerator ChangeState()
@@ -172,19 +199,17 @@ public class AiEnemyScript : MonoBehaviour
         {
             if (player != null)
             {
-                Vector2 direction = (player.position - transform.position).normalized;
-                rb.velocity = new Vector2(direction.x * moveSpeed, rb.velocity.y);
-
-                if ((direction.x > 0 && !isFacingRight) || (direction.x < 0 && isFacingRight))
-                {
-                    Flip();
-                }
-
-                // Check distance between enemy and player
                 float distance = Vector2.Distance(transform.position, player.position);
-                if (distance < stopChaseDistance)
+                if (distance >= stopChaseDistance)
                 {
-                    isPlayerDetected = false; // Stop chasing if too close
+                    Vector2 direction = (player.position - transform.position).normalized;
+                    rb.velocity = new Vector2(direction.x * moveSpeed, rb.velocity.y);
+
+                    LookAtPlayer(); // Ensure the enemy looks at the player
+                }
+                else
+                {
+                    rb.velocity = new Vector2(0, rb.velocity.y); // Stop moving if too close
                 }
             }
             yield return null;
@@ -200,6 +225,6 @@ public class AiEnemyScript : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireCube(frontGroundCheckPos.position, frontGroundCheckSize);
         Gizmos.color = Color.white;
-        Gizmos.DrawWireSphere(playerDetectPos.position, playerDetectRadius);
+        Gizmos.DrawWireCube(playerDetectPos.position, playerDetectSize); // Draw the detection area as a wire cube
     }
 }
