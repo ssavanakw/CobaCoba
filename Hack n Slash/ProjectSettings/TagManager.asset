@@ -4,9 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - MeleeEnemy
   - Obstacle
   - CheckPoint
+  - Enemy
   layers:
   - Default
   - TransparentFX

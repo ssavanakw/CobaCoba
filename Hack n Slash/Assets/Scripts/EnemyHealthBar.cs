@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerHealthBar : MonoBehaviour
+public class EnemyHealthBar : MonoBehaviour
 {
     [Header("Health Bar")]
     [SerializeField] public Slider healthSlider; // Reference to the slider UI component

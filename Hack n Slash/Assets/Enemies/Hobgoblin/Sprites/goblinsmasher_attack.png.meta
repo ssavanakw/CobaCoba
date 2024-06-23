@@ -115,80 +115,17 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 17
+        width: 32
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d2e6c31af8bac14f9c9c248aa373783
+      spriteID: b4b2c480ce67a9f4886f20617220d08a
       internalID: 26133227
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: goblinsmasher_attack_2
-      rect:
-        serializedVersion: 2
-        x: 67
-        y: 0
-        width: 25
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 68d72e8f8c12ea94fb305aea4b51305a
-      internalID: -920560887
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: goblinsmasher_attack_5
-      rect:
-        serializedVersion: 2
-        x: 166
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 418c6143d9578604f813ebf5ac201f98
-      internalID: 351323528
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: goblinsmasher_attack_7
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 548e1db3a7e9d714dac131edecf721dd
-      internalID: 1534428452
       vertices: []
       indices: 
       edges: []
@@ -199,17 +136,38 @@ TextureImporter:
         serializedVersion: 2
         x: 32
         y: 0
-        width: 17
+        width: 32
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1cef2f905e44a4f4ca4cfcda7dfbdf9d
+      spriteID: 645edd64a37210f4c8600f7bea6ebdbe
       internalID: 107947738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblinsmasher_attack_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 16
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c52e1eb145bba2d45a64a3dfb7e06896
+      internalID: -920560887
       vertices: []
       indices: 
       edges: []
@@ -218,18 +176,18 @@ TextureImporter:
       name: goblinsmasher_attack_3
       rect:
         serializedVersion: 2
-        x: 104
+        x: 96
         y: 0
-        width: 18
+        width: 32
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f156227229126994db04779268d280eb
+      spriteID: 861a772a521fa4c4199ddf3993b81365
       internalID: 224813409
       vertices: []
       indices: 
@@ -239,19 +197,40 @@ TextureImporter:
       name: goblinsmasher_attack_4
       rect:
         serializedVersion: 2
-        x: 136
+        x: 128
         y: 0
-        width: 18
+        width: 32
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82d76281c98ca3c4d8ea9772c057ef98
+      spriteID: b1cb4a2a18f696e419528ba5c017b89e
       internalID: 531584809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblinsmasher_attack_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 16
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c705de8fc7c0cf0448ea05fbd16593c9
+      internalID: 351323528
       vertices: []
       indices: 
       edges: []
@@ -262,17 +241,38 @@ TextureImporter:
         serializedVersion: 2
         x: 192
         y: 0
-        width: 16
+        width: 32
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f3cb9d958486dc4cb145a331a66b164
+      spriteID: 4132903d10fb2dd44b85aaa8f80df6b1
       internalID: 766206644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblinsmasher_attack_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 16
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a28fefd427d1c6a4d80801a5672e3f87
+      internalID: 1534428452
       vertices: []
       indices: 
       edges: []
