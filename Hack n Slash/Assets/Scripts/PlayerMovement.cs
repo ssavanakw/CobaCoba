@@ -20,9 +20,10 @@ public class PlayerMovement : MonoBehaviour
     int jumpsRemaining;
 
     [Header("GroundCheck")]
+    [SerializeField] private LayerMask groundLayer;
     public Transform groundCheckPos;
     public Vector2 groundCheckSize = new Vector2 (0.5f, 0.03f);
-    public LayerMask groundLayer;
+    
     bool isGrounded = true;
 
     [Header("Gravity")]
