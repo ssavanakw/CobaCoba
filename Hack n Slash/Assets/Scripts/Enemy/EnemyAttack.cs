@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class EnemyAttack : MonoBehaviour
 {
@@ -27,7 +28,7 @@ public class EnemyAttack : MonoBehaviour
         }
     }
 
-    void MeleeAttack1()
+    public void MeleeAttack1()
     {
         Collider2D[] hitPlayers = Physics2D.OverlapBoxAll(transform.position, meleeAttack1Size, 0f, playerLayer);
         foreach (Collider2D player in hitPlayers)
@@ -37,7 +38,7 @@ public class EnemyAttack : MonoBehaviour
         StartCoroutine(AttackCooldown());
     }
 
-    void MeleeAttack2()
+    public void MeleeAttack2()
     {
         Collider2D[] hitPlayers = Physics2D.OverlapBoxAll(transform.position, meleeAttack2Size, 0f, playerLayer);
         foreach (Collider2D player in hitPlayers)
