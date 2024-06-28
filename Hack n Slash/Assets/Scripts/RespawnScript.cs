@@ -32,7 +32,7 @@ public class RespawnScript : MonoBehaviour
             PlayerHealthBar playerHealth = other.gameObject.GetComponent<PlayerHealthBar>();
             if (playerHealth != null)
             {
-                playerHealth.TakeDamage(damage); // Use the TakeDamage method
+                playerHealth.PlayerTakeDamage(damage); // Use the TakeDamage method
                 
             }
             //other.gameObject.GetComponent<PlayerHealthBar>().currentHealth -= 10;

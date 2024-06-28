@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class FixEnemyDarat : MonoBehaviour
 {
+
     #region Public Variables
     public Transform rayCast;
     public LayerMask raycastMask;
@@ -40,7 +41,7 @@ public class FixEnemyDarat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!attackMode)
+        if (!attackMode)
         {
             Move();
         }
@@ -51,7 +52,7 @@ public class FixEnemyDarat : MonoBehaviour
         }
 
 
-        if(inRange)
+        if (inRange)
         {
             hit = Physics2D.Raycast(rayCast.position, transform.right, rayCastLength, raycastMask);
             RaycastDebugger();
@@ -76,7 +77,7 @@ public class FixEnemyDarat : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D trig)
     {
-        if(trig.gameObject.tag == "Player")
+        if (trig.gameObject.tag == "Player")
         {
             target = trig.transform;
             inRange = true;
@@ -86,7 +87,7 @@ public class FixEnemyDarat : MonoBehaviour
 
     void EnemyLogic()
     {
-       
+
         distance = Vector2.Distance(transform.position, target.position);
 
         if (distance > attackDistance)
@@ -111,9 +112,9 @@ public class FixEnemyDarat : MonoBehaviour
         if (!anim.GetCurrentAnimatorStateInfo(0).IsName("HG_Attack"))
         {
             Vector2 targetPosition = new Vector2(target.position.x, transform.position.y);
-            
-            transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);  
-        
+
+            transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+
         }
     }
 
@@ -131,7 +132,7 @@ public class FixEnemyDarat : MonoBehaviour
     {
         timer -= Time.deltaTime;
 
-        if(timer <= 0 && cooling && attackMode) 
+        if (timer <= 0 && cooling && attackMode)
         {
             cooling = false;
             timer = intTimer;
@@ -142,14 +143,14 @@ public class FixEnemyDarat : MonoBehaviour
     void StopAttack()
     {
         cooling = false;
-        attackMode= false;
+        attackMode = false;
         anim.SetBool("Attack", false);
     }
 
 
     void RaycastDebugger()
     {
-        if(distance > attackDistance)
+        if (distance > attackDistance)
         {
             Debug.DrawRay(rayCast.position, transform.right * rayCastLength, Color.red);
         }
@@ -172,9 +173,9 @@ public class FixEnemyDarat : MonoBehaviour
 
     private void SelectTarget()
     {
-        float distanceToLeft = Vector2.Distance(transform.position, pointA.position);  
+        float distanceToLeft = Vector2.Distance(transform.position, pointA.position);
         float distanceToRight = Vector2.Distance(transform.position, pointB.position);
-        if(distanceToLeft > distanceToRight)
+        if (distanceToLeft > distanceToRight)
         {
             target = pointA;
         }
@@ -190,7 +191,7 @@ public class FixEnemyDarat : MonoBehaviour
     private void Flip()
     {
         Vector3 rotation = transform.eulerAngles;
-        if(transform.position.x > target.position.x)
+        if (transform.position.x > target.position.x)
         {
             rotation.y = 180f;
         }

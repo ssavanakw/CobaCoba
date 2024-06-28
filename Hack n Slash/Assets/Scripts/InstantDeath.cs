@@ -15,7 +15,7 @@ public class InstantDeath : MonoBehaviour
             // If the player's health component exists, reduce their health to zero
             if (playerHealth != null)
             {
-                playerHealth.TakeDamage(playerHealth.currentHealth);
+                playerHealth.PlayerTakeDamage(playerHealth.currentHealth);
             }
         }
     }

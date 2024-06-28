@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 830397537892183413}
   - component: {fileID: 2266495869461989229}
   - component: {fileID: 4239307716018971714}
+  - component: {fileID: 7506001023811255637}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -35,12 +36,13 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3223702, y: 1.3223702, z: 1.3223702}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3336780109779030777}
   - {fileID: 1227429167560576145}
   - {fileID: 8435548244586159640}
+  - {fileID: 8584091885800864436}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8577538764299372123
@@ -343,11 +345,11 @@ MonoBehaviour:
   moveSpeed: 5
   jumpPower: 10
   maxJumps: 2
-  groundCheckPos: {fileID: 3336780109779030777}
-  groundCheckSize: {x: 0.5, y: 0.04}
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  groundCheckPos: {fileID: 3336780109779030777}
+  groundCheckSize: {x: 0.5, y: 0.04}
   baseGravity: 2
   maxFallSpeed: 18
   fallSpeedMultiplier: 2
@@ -377,14 +379,36 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646002795508851865}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36c002fbfa3d7cc4aa37fe86ebf3aa79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthSlider: {fileID: 0}
+  healthBarSlider: {fileID: 0}
+  easeHealthBarSlider: {fileID: 0}
   maxHealth: 100
   currentHealth: 0
+  lerpSpeed: 0.01
+--- !u!114 &7506001023811255637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646002795508851865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeadaab2f492dd748a7fbecfdf2c82dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 8681683834317726711}
+  attack1: {fileID: 6585958728575837920}
+  damage: 10
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  attackOffset: {x: 0, y: -0.23}
+  attackSize: {x: 0.59, y: 0.77}
 --- !u!1 &4074500986677375684
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,6 +435,37 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.162, y: -0.155, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5666223509802591859}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6585958728575837920
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8584091885800864436}
+  m_Layer: 7
+  m_Name: Attack1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8584091885800864436
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6585958728575837920}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -169,7 +169,7 @@ public class Enemy : MonoBehaviour
     {
         if (PlayerInRange(attackRanges) && playerHealth != null)
         {
-            playerHealth.TakeDamage(damageAmount);
+            playerHealth.PlayerTakeDamage(damageAmount);
         }
 
         isAttacking = false;

@@ -232,7 +232,7 @@ public class AiEnemyScript : MonoBehaviour
             PlayerHealthBar playerHealth = player.GetComponent<PlayerHealthBar>();
             if (playerHealth != null)
             {
-                playerHealth.TakeDamage(attackDamage);
+                playerHealth.PlayerTakeDamage(attackDamage);
             }
         }
     }

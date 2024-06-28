@@ -1,65 +1,62 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    public Vector2 meleeAttack1Size = new Vector2(3f, 3f); // Size of the box for meleeAttack1
-    public Vector2 meleeAttack2Size = new Vector2(4f, 4f); // Size of the box for meleeAttack2
-    public LayerMask playerLayer;
-    public int meleeAttack1Damage = 10;
-    public int meleeAttack2Damage = 20;
-    public float attackCooldown = 2f;
+    public Animator animator;
+    public GameObject enemyAttack1;  // Assuming enemyAttack1 is the attack range GameObject
+    public int damage;
+    public LayerMask playerLayer;  // To filter only player layer
+    public Vector2 attackOffset;
+    public Vector2 attackSize;
 
-    private bool canAttack = true;
-
-    void Update()
+    private void Awake()
     {
-        if (canAttack)
+        enemyAttack1.SetActive(false);  // Ensure the attack range is disabled at the start
+    }
+
+    private void Update()
+    {
+
+    }
+
+    // This method will be called from the animation event
+    void EnableAttack1()
+    {
+        enemyAttack1.SetActive(true);
+        CheckForPlayerHit();
+    }
+
+    // This method will be called from the animation event
+    void DisableAttack1()
+    {
+        enemyAttack1.SetActive(false);
+        animator.SetBool("Attack", false); // Set isAttacking to false when the attack ends
+    }
+
+    // Method to check if player is within the attack range
+    void CheckForPlayerHit()
+    {
+        Vector2 attackPosition = (Vector2)transform.position + attackOffset;
+        Collider2D[] hitPlayers = Physics2D.OverlapBoxAll(attackPosition, attackSize, 0, playerLayer);
+
+        foreach (Collider2D hitPlayer in hitPlayers)
         {
-            if (Input.GetKeyDown(KeyCode.Z))
+            PlayerHealthBar playerHealthBar = hitPlayer.GetComponent<PlayerHealthBar>();
+            if (playerHealthBar != null)
             {
-                MeleeAttack1();
-            }
-            else if (Input.GetKeyDown(KeyCode.X))
-            {
-                MeleeAttack2();
+                playerHealthBar.PlayerTakeDamage(damage);
             }
         }
     }
 
-    void MeleeAttack1()
+    private void OnDrawGizmosSelected()
     {
-        Collider2D[] hitPlayers = Physics2D.OverlapBoxAll(transform.position, meleeAttack1Size, 0f, playerLayer);
-        foreach (Collider2D player in hitPlayers)
-        {
-            player.GetComponent<PlayerHealthBar>().TakeDamage(meleeAttack1Damage);
-        }
-        StartCoroutine(AttackCooldown());
-    }
-
-    void MeleeAttack2()
-    {
-        Collider2D[] hitPlayers = Physics2D.OverlapBoxAll(transform.position, meleeAttack2Size, 0f, playerLayer);
-        foreach (Collider2D player in hitPlayers)
-        {
-            player.GetComponent<PlayerHealthBar>().TakeDamage(meleeAttack2Damage);
-        }
-        StartCoroutine(AttackCooldown());
-    }
-
-    IEnumerator AttackCooldown()
-    {
-        canAttack = false;
-        yield return new WaitForSeconds(attackCooldown);
-        canAttack = true;
-    }
-
-    void OnDrawGizmosSelected()
-    {
+        // Visualize the attack range in the editor
         Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(transform.position, new Vector3(meleeAttack1Size.x, meleeAttack1Size.y, 0));
-
-        Gizmos.color = Color.blue;
-        Gizmos.DrawWireCube(transform.position, new Vector3(meleeAttack2Size.x, meleeAttack2Size.y, 0));
+        Vector3 attackPosition = enemyAttack1.transform.position + (Vector3)attackOffset;
+        Gizmos.DrawWireCube(attackPosition, attackSize);
     }
+
 }

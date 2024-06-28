@@ -65,7 +65,7 @@ public class MusuhDarat : Enemy
         Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(attackPoint1.position, attackRange1, playerLayer);
         foreach (Collider2D player in hitPlayers)
         {
-            player.GetComponent<PlayerHealthBar>().TakeDamage(attackDamage1);
+            player.GetComponent<PlayerHealthBar>().PlayerTakeDamage(attackDamage1);
         }
     }
 

@@ -13,7 +13,7 @@ public class AttackCollider : MonoBehaviour
             PlayerHealthBar playerHealth = other.GetComponent<PlayerHealthBar>();
             if (playerHealth != null)
             {
-                playerHealth.TakeDamage(damage);
+                playerHealth.PlayerTakeDamage(damage);
             }
         }
     }
