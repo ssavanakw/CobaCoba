@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class EnemyAttack : MonoBehaviour
 {
@@ -52,6 +53,34 @@ public class EnemyAttack : MonoBehaviour
     }
 
     private void OnDrawGizmosSelected()
+    public void MeleeAttack1()
+    {
+        Collider2D[] hitPlayers = Physics2D.OverlapBoxAll(transform.position, meleeAttack1Size, 0f, playerLayer);
+        foreach (Collider2D player in hitPlayers)
+        {
+            player.GetComponent<PlayerHealthBar>().TakeDamage(meleeAttack1Damage);
+        }
+        StartCoroutine(AttackCooldown());
+    }
+
+    public void MeleeAttack2()
+    {
+        Collider2D[] hitPlayers = Physics2D.OverlapBoxAll(transform.position, meleeAttack2Size, 0f, playerLayer);
+        foreach (Collider2D player in hitPlayers)
+        {
+            player.GetComponent<PlayerHealthBar>().TakeDamage(meleeAttack2Damage);
+        }
+        StartCoroutine(AttackCooldown());
+    }
+
+    IEnumerator AttackCooldown()
+    {
+        canAttack = false;
+        yield return new WaitForSeconds(attackCooldown);
+        canAttack = true;
+    }
+
+    void OnDrawGizmosSelected()
     {
         // Visualize the attack range in the editor
         Gizmos.color = Color.red;
