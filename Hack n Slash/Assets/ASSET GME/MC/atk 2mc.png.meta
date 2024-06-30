@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3bf9a9444776e9c4783c1af275833d4b
+guid: ccc3bffd09330fa49ac57d4bf5b58289
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: magic MC_0
+      name: atk 2mc_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 62
-        width: 29
-        height: 47
+        x: 6
+        y: 61
+        width: 53
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12653af4b7867e0438524d5928836d62
-      internalID: -698998469
+      spriteID: 1634e917130b7ee4a8ab62a920ef8f51
+      internalID: -222831124
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magic MC_1
+      name: atk 2mc_1
       rect:
         serializedVersion: 2
-        x: 77
-        y: 62
-        width: 29
-        height: 48
+        x: 79
+        y: 61
+        width: 50
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26bcff75e7d59704db4eb8363103928f
-      internalID: 1304576230
+      spriteID: fbe996fbd72e0d848935596e7f327069
+      internalID: -569432479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magic MC_2
+      name: atk 2mc_2
       rect:
         serializedVersion: 2
-        x: 141
-        y: 62
-        width: 29
-        height: 48
+        x: 152
+        y: 61
+        width: 44
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1232506743b11e3428731666e11664bf
-      internalID: -771120379
+      spriteID: ad06f0b2533afa34f80aef41c6d1dd55
+      internalID: 1703952904
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magic MC_3
+      name: atk 2mc_3
       rect:
         serializedVersion: 2
-        x: 205
-        y: 62
-        width: 43
-        height: 48
+        x: 222
+        y: 61
+        width: 38
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2cbf62adb8cb9340aa7d2eddf70e76a
-      internalID: -2020440951
+      spriteID: 58ca404cccd3f6247b21bdbfdfa47b9d
+      internalID: 479310715
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magic MC_4
+      name: atk 2mc_4
       rect:
         serializedVersion: 2
-        x: 269
-        y: 62
-        width: 31
-        height: 48
+        x: 292
+        y: 61
+        width: 38
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c263ba40e7f08041b446ce7a44197ed
-      internalID: 1204936402
+      spriteID: 5bd77682133d27e47863997df2608ee1
+      internalID: 1458523892
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magic MC_5
+      name: atk 2mc_5
       rect:
         serializedVersion: 2
-        x: 296
-        y: 79
-        width: 16
-        height: 16
+        x: 359
+        y: 61
+        width: 39
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 293a70542e177124b9a8b50054bdd409
-      internalID: 1981098258
+      spriteID: d67f142831db6064b8ba4ceae1311cc4
+      internalID: -1159815781
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magic MC_6
+      name: atk 2mc_6
       rect:
         serializedVersion: 2
-        x: 333
-        y: 62
-        width: 29
-        height: 48
+        x: 426
+        y: 61
+        width: 53
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1289295e86ff48d47a1381c52c3eb87b
-      internalID: 787293356
+      spriteID: a0d3fa0b98eb8e84b817abf4b4208cc8
+      internalID: -1720479489
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magic MC_7
+      name: atk 2mc_7
       rect:
         serializedVersion: 2
-        x: 361
-        y: 81
-        width: 6
-        height: 6
+        x: 499
+        y: 60
+        width: 47
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,8 +271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b83061e7703b2e468a4f2b3c8c2e5ee
-      internalID: 1091822350
+      spriteID: ab5a2fd3418403e47a6e7356fc389457
+      internalID: -479754566
       vertices: []
       indices: 
       edges: []
@@ -288,14 +288,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      magic MC_0: -698998469
-      magic MC_1: 1304576230
-      magic MC_2: -771120379
-      magic MC_3: -2020440951
-      magic MC_4: 1204936402
-      magic MC_5: 1981098258
-      magic MC_6: 787293356
-      magic MC_7: 1091822350
+      atk 2mc_0: -222831124
+      atk 2mc_1: -569432479
+      atk 2mc_2: 1703952904
+      atk 2mc_3: 479310715
+      atk 2mc_4: 1458523892
+      atk 2mc_5: -1159815781
+      atk 2mc_6: -1720479489
+      atk 2mc_7: -479754566
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
