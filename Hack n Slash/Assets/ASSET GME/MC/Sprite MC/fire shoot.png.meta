@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3bf9a9444776e9c4783c1af275833d4b
+guid: d15956c57ccad6542a16b3f835e2ec76
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,76 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: magic MC_0
+      name: fire shoot_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 62
-        width: 29
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 12653af4b7867e0438524d5928836d62
-      internalID: -698998469
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magic MC_1
-      rect:
-        serializedVersion: 2
-        x: 77
-        y: 62
-        width: 29
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 26bcff75e7d59704db4eb8363103928f
-      internalID: 1304576230
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magic MC_2
-      rect:
-        serializedVersion: 2
-        x: 141
-        y: 62
-        width: 29
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1232506743b11e3428731666e11664bf
-      internalID: -771120379
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magic MC_3
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 62
+        x: 7
+        y: 23
         width: 43
-        height: 48
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2cbf62adb8cb9340aa7d2eddf70e76a
-      internalID: -2020440951
+      spriteID: bfdc36b902abcc249ad63247b4131a20
+      internalID: 736252985
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magic MC_4
+      name: fire shoot_1
       rect:
         serializedVersion: 2
-        x: 269
-        y: 62
-        width: 31
-        height: 48
+        x: 64
+        y: 23
+        width: 43
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c263ba40e7f08041b446ce7a44197ed
-      internalID: 1204936402
+      spriteID: c271ebfb40b5b2b44ab315f60ce59993
+      internalID: 566023052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magic MC_5
+      name: fire shoot_2
       rect:
         serializedVersion: 2
-        x: 296
-        y: 79
-        width: 16
-        height: 16
+        x: 116
+        y: 23
+        width: 43
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 293a70542e177124b9a8b50054bdd409
-      internalID: 1981098258
+      spriteID: 648a2689865672d44907e170892e6539
+      internalID: -1213746070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magic MC_6
+      name: fire shoot_3
       rect:
         serializedVersion: 2
-        x: 333
-        y: 62
-        width: 29
-        height: 48
+        x: 161
+        y: 21
+        width: 40
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,20 +187,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1289295e86ff48d47a1381c52c3eb87b
-      internalID: 787293356
+      spriteID: 3c160bff902824345a086b67c6c23cd7
+      internalID: -600056197
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magic MC_7
+      name: fire shoot_4
       rect:
         serializedVersion: 2
-        x: 361
-        y: 81
+        x: 215
+        y: 22
+        width: 40
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c926404c6530354ebb5193b0c9a9297
+      internalID: 1000685937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire shoot_5
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 22
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b9cd3db287ac141abeb39d763aa513
+      internalID: -1446735268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire shoot_6
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f6cfc7d7d1a3b40b2c90cff88f509c
+      internalID: 190256376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire shoot_7
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 26
         width: 6
-        height: 6
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,8 +271,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b83061e7703b2e468a4f2b3c8c2e5ee
-      internalID: 1091822350
+      spriteID: 7b7e8573096e47248bfaf58cb43bd008
+      internalID: -1856757840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire shoot_8
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 29
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9807893d8c949d046b83b91f01f013f1
+      internalID: 697877107
       vertices: []
       indices: 
       edges: []
@@ -288,14 +309,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      magic MC_0: -698998469
-      magic MC_1: 1304576230
-      magic MC_2: -771120379
-      magic MC_3: -2020440951
-      magic MC_4: 1204936402
-      magic MC_5: 1981098258
-      magic MC_6: 787293356
-      magic MC_7: 1091822350
+      fire shoot_0: 736252985
+      fire shoot_1: 566023052
+      fire shoot_2: -1213746070
+      fire shoot_3: -600056197
+      fire shoot_4: 1000685937
+      fire shoot_5: -1446735268
+      fire shoot_6: 190256376
+      fire shoot_7: -1856757840
+      fire shoot_8: 697877107
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

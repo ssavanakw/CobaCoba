@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3bf9a9444776e9c4783c1af275833d4b
+guid: 0ae73589ca10b3c47a362fe056cafd3c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: magic MC_0
+      name: atk_cmd mc_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 62
-        width: 29
-        height: 47
+        x: 7
+        y: 61
+        width: 40
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12653af4b7867e0438524d5928836d62
-      internalID: -698998469
+      spriteID: f3b6f79d702d2cd49972518385afaae8
+      internalID: 421476673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magic MC_1
+      name: atk_cmd mc_1
       rect:
         serializedVersion: 2
-        x: 77
-        y: 62
-        width: 29
-        height: 48
+        x: 75
+        y: 61
+        width: 42
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26bcff75e7d59704db4eb8363103928f
-      internalID: 1304576230
+      spriteID: 4540d9fde1258a447a64176361f096ce
+      internalID: -2038474713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magic MC_2
+      name: atk_cmd mc_2
       rect:
         serializedVersion: 2
-        x: 141
-        y: 62
-        width: 29
-        height: 48
+        x: 147
+        y: 61
+        width: 39
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,167 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1232506743b11e3428731666e11664bf
-      internalID: -771120379
+      spriteID: 729c0b72ebf4b7d4486a6a1a17e97f15
+      internalID: -1646798160
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magic MC_3
+      name: atk_cmd mc_3
       rect:
         serializedVersion: 2
-        x: 205
-        y: 62
+        x: 216
+        y: 60
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d9a97d4c19f6254fac96010b09bcccc
+      internalID: -1640106831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atk_cmd mc_4
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 61
+        width: 66
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d2fafdda1e04ff40a8738b520d0ba04
+      internalID: -2112745454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atk_cmd mc_5
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 60
+        width: 60
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd0e52ad69d72b7489216823d20061e4
+      internalID: 1132418664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atk_cmd mc_6
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 60
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa3b60fcc0dfd7c43997ed3a2b4e56de
+      internalID: 1494814899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atk_cmd mc_7
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 60
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad8f5cdcf58aab4e93eac992e140218
+      internalID: 1393349067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atk_cmd mc_8
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 60
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e276d8274381245a7234149e36b180
+      internalID: 216741578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atk_cmd mc_9
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 80
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 246904573994e45449b02a5819ab798b
+      internalID: -361637700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atk_cmd mc_10
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 60
         width: 43
-        height: 48
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +334,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2cbf62adb8cb9340aa7d2eddf70e76a
-      internalID: -2020440951
+      spriteID: 7aebe568d245a924d9324cbd1b3307df
+      internalID: 1305229398
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magic MC_4
+      name: atk_cmd mc_11
       rect:
         serializedVersion: 2
-        x: 269
-        y: 62
-        width: 31
-        height: 48
+        x: 720
+        y: 60
+        width: 39
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +355,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c263ba40e7f08041b446ce7a44197ed
-      internalID: 1204936402
+      spriteID: 132fdad3d991820468e90a6ac4c0681f
+      internalID: 5437538
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magic MC_5
+      name: atk_cmd mc_12
       rect:
         serializedVersion: 2
-        x: 296
+        x: 756
         y: 79
-        width: 16
-        height: 16
+        width: 5
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,50 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 293a70542e177124b9a8b50054bdd409
-      internalID: 1981098258
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magic MC_6
-      rect:
-        serializedVersion: 2
-        x: 333
-        y: 62
-        width: 29
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1289295e86ff48d47a1381c52c3eb87b
-      internalID: 787293356
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magic MC_7
-      rect:
-        serializedVersion: 2
-        x: 361
-        y: 81
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b83061e7703b2e468a4f2b3c8c2e5ee
-      internalID: 1091822350
+      spriteID: a3532b898220b4a4b8decd1e0a318cfe
+      internalID: -1696773147
       vertices: []
       indices: 
       edges: []
@@ -288,14 +393,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      magic MC_0: -698998469
-      magic MC_1: 1304576230
-      magic MC_2: -771120379
-      magic MC_3: -2020440951
-      magic MC_4: 1204936402
-      magic MC_5: 1981098258
-      magic MC_6: 787293356
-      magic MC_7: 1091822350
+      atk_cmd mc_0: 421476673
+      atk_cmd mc_1: -2038474713
+      atk_cmd mc_10: 1305229398
+      atk_cmd mc_11: 5437538
+      atk_cmd mc_12: -1696773147
+      atk_cmd mc_2: -1646798160
+      atk_cmd mc_3: -1640106831
+      atk_cmd mc_4: -2112745454
+      atk_cmd mc_5: 1132418664
+      atk_cmd mc_6: 1494814899
+      atk_cmd mc_7: 1393349067
+      atk_cmd mc_8: 216741578
+      atk_cmd mc_9: -361637700
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

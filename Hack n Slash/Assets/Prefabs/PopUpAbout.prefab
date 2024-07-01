@@ -168,7 +168,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -122.07, y: 215.71}
+  m_AnchoredPosition: {x: 0, y: 137.16}
   m_SizeDelta: {x: 206.82, y: 89.429}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3376844035226734433
@@ -285,7 +285,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4476090410494510577
 RectTransform:
   m_ObjectHideFlags: 0
@@ -305,8 +305,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 425, y: 500}
+  m_AnchoredPosition: {x: 67, y: -0.000011444}
+  m_SizeDelta: {x: 629.5337, y: 491.6517}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6825083091389558975
 CanvasRenderer:
@@ -336,8 +336,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 8b60e24b4433d894c9724383e889a5a9, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -380,8 +380,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -42.08583, y: -78.465}
-  m_SizeDelta: {x: 335.3951, y: 256.93}
+  m_AnchoredPosition: {x: 0.0000090003, y: -142.36}
+  m_SizeDelta: {x: 377.9387, y: 206.93}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5959671302573387115
 CanvasRenderer:
@@ -411,7 +411,22 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ndnsvinsdvnsdknsknjenvsvvvvvvvsvsvvvvvvvndnsvinsdvnsdknsknjenvsvvvvvvvsvsvvvvvvvndnsvinsdvnsdknsknjenvsvvvvvvvsvsvvvvvvvndnsvinsdvnsdknsknjenvsvvvvvvvsvsvvvvvvv
+  m_text: 'SURYA SAVANA KARUNIA WICAKSANA
+
+    21.60.0123
+
+
+    FATHURRAHMAN DANI
+
+    21.60.0139
+
+
+    JIMMY
+    CHRISTIAN
+
+    21.60.0121
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -444,8 +459,8 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -474,7 +489,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: -135.60681, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -516,8 +531,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 182.58765, y: 224.57585}
-  m_SizeDelta: {x: 40.2243, y: 30}
+  m_AnchoredPosition: {x: 185.17114, y: 144}
+  m_SizeDelta: {x: 30.5667, y: 30.878}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &222870254053019439
 CanvasRenderer:
@@ -547,8 +562,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: c6b156e550359a046974a5f8c1b004cd, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

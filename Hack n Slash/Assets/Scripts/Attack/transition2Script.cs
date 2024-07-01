@@ -15,7 +15,7 @@ public class transition2Script : StateMachineBehaviour
     {
         if (CombatManager.instance.isAttacking)
         {
-            CombatManager.instance.myAnim.Play("Attack 2");
+            CombatManager.instance.myAnim.Play("Attack 3");
         }
     }
 
