@@ -46,7 +46,7 @@ public class PlayerHealthBar : MonoBehaviour
         if (currentHealth <= 0)
         {
             playerMovement.enabled = false; // Disable the PlayerMovement script
-            animator.SetTrigger("dead");
+            animator.SetBool("isDead", true);
         }
     }
     void Die()
@@ -68,7 +68,6 @@ public class PlayerHealthBar : MonoBehaviour
         currentHealth += healAmount; // Reduce current health by the damage amount
         currentHealth = Mathf.Clamp(currentHealth, 0f, maxHealth); // Clamp current health to ensure it stays within 0 and maxHealth
         Debug.Log("Player takes " + healAmount + " damage."); // Log the damage amount
-
 
     }
 

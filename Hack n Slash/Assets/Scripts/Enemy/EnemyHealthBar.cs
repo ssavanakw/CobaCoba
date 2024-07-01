@@ -44,21 +44,22 @@ public class EnemyHealthBar : MonoBehaviour
         }
         if (enemyCurrentHealth <= 0)
         {
-            animator.SetTrigger("Die");
+            fixEnemyDarat.enabled = false; // Disable the PlayerMovement script
+            animator.SetBool("Dead", true);
         }
 
     }
 
     void Die()
     {
-        fixEnemyDarat.enabled = false; // Disable the PlayerMovement script
+
         Destroy(gameObject); // Destroy the player object
     }
 
 
     public void EnemyTakeDamage(float damageAmount)
     {
-
+        animator.SetTrigger("Hit");
         enemyCurrentHealth -= damageAmount; // Reduce current health by the damage amount
         enemyCurrentHealth = Mathf.Clamp(enemyCurrentHealth, 0f, enemyMaxHealth); // Clamp current health to ensure it stays within 0 and maxHealth
         Debug.Log("Enemy takes " + damageAmount + " damage."); // Log the damage amount

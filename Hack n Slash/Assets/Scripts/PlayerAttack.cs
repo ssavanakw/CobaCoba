@@ -11,9 +11,12 @@ public class PlayerAttack : MonoBehaviour
     public Vector2 attackOffset;
     public Vector2 attackSize;
 
+    private PlayerMovement playerMovement;
+
     private void Awake()
     {
         attack1.SetActive(false);  // Ensure the attack range is disabled at the start
+        playerMovement = GetComponent<PlayerMovement>(); // Get reference to PlayerMovement script
     }
 
     private void Update()
@@ -29,6 +32,12 @@ public class PlayerAttack : MonoBehaviour
         animator.SetBool("isAttacking", true);
     }
 
+    void StopMove()
+    {
+        playerMovement.enabled = false; // Disable player movement during attack
+    }
+
+
     // This method will be called from the animation event
     void EnableAttack1()
     {
@@ -40,7 +49,12 @@ public class PlayerAttack : MonoBehaviour
     void DisableAttack1()
     {
         attack1.SetActive(false);
+    }
+
+    void EndAttack()
+    {
         animator.SetBool("isAttacking", false); // Set isAttacking to false when the attack ends
+        playerMovement.enabled = true; // Enable player movement after attack ends
     }
 
     // Method to check if enemy is within the attack range
