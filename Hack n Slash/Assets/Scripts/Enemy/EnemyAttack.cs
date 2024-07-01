@@ -52,7 +52,6 @@ public class EnemyAttack : MonoBehaviour
         }
     }
 
-    private void OnDrawGizmosSelected()
     public void MeleeAttack1()
     {
         Collider2D[] hitPlayers = Physics2D.OverlapBoxAll(transform.position, meleeAttack1Size, 0f, playerLayer);
