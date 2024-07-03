@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerAttack : MonoBehaviour
 {
@@ -12,19 +13,29 @@ public class PlayerAttack : MonoBehaviour
     public Vector2 attackSize;
 
     private PlayerMovement playerMovement;
+    private PlayerInput playerInput;
+    private InputAction attackAction;
 
     private void Awake()
     {
         attack1.SetActive(false);  // Ensure the attack range is disabled at the start
         playerMovement = GetComponent<PlayerMovement>(); // Get reference to PlayerMovement script
+        playerInput = GetComponent<PlayerInput>(); // Get reference to PlayerInput component
+
+        // Find the attack action from the input actions
+        attackAction = playerInput.actions["Attack"];
+        attackAction.performed += OnAttackPerformed;
     }
 
-    private void Update()
+    private void OnDestroy()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            Attack();
-        }
+        // Unsubscribe to avoid memory leaks
+        attackAction.performed -= OnAttackPerformed;
+    }
+
+    private void OnAttackPerformed(InputAction.CallbackContext context)
+    {
+        Attack();
     }
 
     void Attack()
@@ -36,7 +47,6 @@ public class PlayerAttack : MonoBehaviour
     {
         playerMovement.enabled = false; // Disable player movement during attack
     }
-
 
     // This method will be called from the animation event
     void EnableAttack1()
