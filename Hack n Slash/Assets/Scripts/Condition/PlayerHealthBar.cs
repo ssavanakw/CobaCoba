@@ -7,6 +7,7 @@ public class PlayerHealthBar : MonoBehaviour
 {
     private Animator animator;
     private PlayerMovement playerMovement;
+    public GameObject respawnPoint;
 
     [Header("Health Bar")]
     [SerializeField] public Slider healthBarSlider;
