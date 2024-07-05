@@ -46,4 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startingSceneTransition: {fileID: 0}
   _endingSceneTransition: {fileID: 0}
-  nextSceneBuildIndex: 0
+  nextSceneBuildIndex: 1

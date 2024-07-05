@@ -27,8 +27,9 @@ public class SceneThing : MonoBehaviour
 
     public void StartGame()
     {
+        
         _endingSceneTransition.SetActive(true);
-        Invoke("DisableEndingSceneTransition", 5f);
+        Invoke("LoadNextLevel", 3f);
     }
 
     private void LoadNextLevel()
