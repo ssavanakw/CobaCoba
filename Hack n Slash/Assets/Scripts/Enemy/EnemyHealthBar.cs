@@ -59,6 +59,7 @@ public class EnemyHealthBar : MonoBehaviour
 
     public void EnemyTakeDamage(float damageAmount)
     {
+
         animator.SetTrigger("Hit");
         enemyCurrentHealth -= damageAmount; // Reduce current health by the damage amount
         enemyCurrentHealth = Mathf.Clamp(enemyCurrentHealth, 0f, enemyMaxHealth); // Clamp current health to ensure it stays within 0 and maxHealth

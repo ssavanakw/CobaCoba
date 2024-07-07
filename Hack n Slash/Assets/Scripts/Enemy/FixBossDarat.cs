@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.SearchService;
 using UnityEditor.Tilemaps;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class FixBossDarat : MonoBehaviour
@@ -16,6 +17,7 @@ public class FixBossDarat : MonoBehaviour
     public float timer;
     public Transform pointA;
     public Transform pointB;
+    public GameObject enemyHealthBar;
     #endregion
 
     #region Private Variables
@@ -36,6 +38,9 @@ public class FixBossDarat : MonoBehaviour
         SelectTarget();
         intTimer = timer;
         anim = GetComponent<Animator>();
+
+        enemyHealthBar.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -81,6 +86,7 @@ public class FixBossDarat : MonoBehaviour
         {
             target = trig.transform;
             inRange = true;
+            enemyHealthBar.SetActive(true);
             BossFlip();
         }
     }

@@ -1013,10 +1013,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: EndTransition
       objectReference: {fileID: 0}
-    - target: {fileID: 2643359787480336175, guid: 753e379c543bb43419e12ab2890221da, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7526492780728821584, guid: 753e379c543bb43419e12ab2890221da, type: 3}
       propertyPath: m_Pivot.x
       value: 0.56
@@ -3358,10 +3354,6 @@ PrefabInstance:
     - target: {fileID: 6630017095847551453, guid: ff9ba767c7559e74290954d63a29c96e, type: 3}
       propertyPath: m_Name
       value: StartTransition
-      objectReference: {fileID: 0}
-    - target: {fileID: 6630017095847551453, guid: ff9ba767c7559e74290954d63a29c96e, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

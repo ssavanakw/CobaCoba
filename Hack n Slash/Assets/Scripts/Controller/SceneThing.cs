@@ -27,7 +27,14 @@ public class SceneThing : MonoBehaviour
 
     public void StartGame()
     {
-        
+        _endingSceneTransition.SetActive(true);
+        Invoke("LoadNextLevel", 3f);
+    }
+
+    public void StartGameWithIndex(int sceneIndex)
+    {
+
+        nextSceneBuildIndex = sceneIndex;
         _endingSceneTransition.SetActive(true);
         Invoke("LoadNextLevel", 3f);
     }
