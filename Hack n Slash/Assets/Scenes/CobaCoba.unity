@@ -4442,7 +4442,7 @@ Transform:
   m_GameObject: {fileID: 1729976138}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7, y: -0.047, z: 0}
+  m_LocalPosition: {x: -0.632, y: -0.104, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6340,7 +6340,7 @@ Transform:
   m_GameObject: {fileID: 3034382235108273513}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.613, y: -0.116, z: 0}
+  m_LocalPosition: {x: -0.676, y: -0.147, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6537,8 +6537,8 @@ Transform:
   m_GameObject: {fileID: 8673863415708940133}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.36, y: 0.16, z: 0}
-  m_LocalScale: {x: 1.6676, y: 1.6676, z: 1.6676}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2110631722}
@@ -7375,7 +7375,7 @@ MonoBehaviour:
   raycastMask:
     serializedVersion: 2
     m_Bits: 128
-  rayCastLength: 5
+  rayCastLength: 4
   attackDistance: 2
   moveSpeed: 2
   timer: 3
