@@ -110854,7 +110854,7 @@ Transform:
   m_GameObject: {fileID: 216686473}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.542776, y: -7.8, z: -0.37774125}
+  m_LocalPosition: {x: 25.542772, y: -7.8, z: -0.37774125}
   m_LocalScale: {x: 50, y: 25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -111508,6 +111508,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: SceneThing, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 1746376544112837144, guid: 8d136640542c2584f8c517d098940d93, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 1913292453227283700, guid: 8d136640542c2584f8c517d098940d93, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -111533,6 +111537,10 @@ PrefabInstance:
       value: 'Resume
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7305585548929521357, guid: 8d136640542c2584f8c517d098940d93, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -42
       objectReference: {fileID: 0}
     - target: {fileID: 7541285979693197274, guid: 8d136640542c2584f8c517d098940d93, type: 3}
       propertyPath: m_Name
@@ -122326,7 +122334,7 @@ Transform:
   m_GameObject: {fileID: 1796214315}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.271328, y: -7.8, z: -0.37774125}
+  m_LocalPosition: {x: 26.271326, y: -7.8, z: -0.37774125}
   m_LocalScale: {x: 50, y: 25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -130255,7 +130263,7 @@ Transform:
   m_GameObject: {fileID: 2113655958}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 24.814161, y: -7.8, z: -0.37774125}
+  m_LocalPosition: {x: 24.814157, y: -7.8, z: -0.37774125}
   m_LocalScale: {x: 50, y: 25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
