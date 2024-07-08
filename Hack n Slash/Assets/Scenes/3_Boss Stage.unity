@@ -148941,6 +148941,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1541012045960005177, guid: 3627e4e3156993043af8bf274dde5b2a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.608
+      objectReference: {fileID: 0}
     - target: {fileID: 2065300717024013964, guid: 3627e4e3156993043af8bf274dde5b2a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -149039,7 +149043,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6610369455371060014, guid: 3627e4e3156993043af8bf274dde5b2a, type: 3}
       propertyPath: attackSize.x
-      value: 2
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6610369455371060014, guid: 3627e4e3156993043af8bf274dde5b2a, type: 3}
+      propertyPath: attackSize.y
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8147415315353339584, guid: 3627e4e3156993043af8bf274dde5b2a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8147415315353339584, guid: 3627e4e3156993043af8bf274dde5b2a, type: 3}
       propertyPath: enemyCurrentHealth
