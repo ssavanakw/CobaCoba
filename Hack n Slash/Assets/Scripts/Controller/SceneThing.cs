@@ -5,9 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class SceneThing : MonoBehaviour
 {
+
     [SerializeField] private GameObject _startingSceneTransition;
     [SerializeField] private GameObject _endingSceneTransition;
     [SerializeField] private int nextSceneBuildIndex;
+
+    private bool isPaused = false;
 
     private void Start()
     {
@@ -63,4 +66,30 @@ public class SceneThing : MonoBehaviour
     {
         nextSceneBuildIndex = index;
     }
+
+    public void Pause()
+    {
+        if (!isPaused)
+        {
+            isPaused = true;
+            Time.timeScale = 0f;
+        }
+    }
+    public void Resume()
+    {
+        if (isPaused)
+        {
+            isPaused = false;
+            Time.timeScale = 1f;
+        }
+    }
+
+    public void RestartScene()
+    {
+        _endingSceneTransition.SetActive(true);
+        Time.timeScale = 1f;
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
+    }
+
 }
