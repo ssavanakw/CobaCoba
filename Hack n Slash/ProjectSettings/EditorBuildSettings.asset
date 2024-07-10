@@ -9,13 +9,16 @@ EditorBuildSettings:
     path: Assets/Scenes/0_Menu.unity
     guid: 6f8de6bffcedecb4e9e410e9fde93d27
   - enabled: 1
-    path: Assets/Scenes/1_Stage 1 (Tutor dek).unity
+    path: Assets/Scenes/1_CutScene.unity
+    guid: fbe721a6900f45740b0f6293be667733
+  - enabled: 1
+    path: Assets/Scenes/2_Stage 1 (Tutor dek).unity
     guid: 05c280c3f061bb34da95a7dc978e5b4a
   - enabled: 1
-    path: Assets/Scenes/2_Stage 2.unity
+    path: Assets/Scenes/3_Stage 2.unity
     guid: cb058b5229e3a794287ae0989a52e684
   - enabled: 1
-    path: Assets/Scenes/3_Boss Stage.unity
+    path: Assets/Scenes/4_Boss Stage.unity
     guid: 0aa00d2d21864dc4ba11cb5b60657676
   - enabled: 0
     path: Assets/Scenes/CobaCoba.unity
