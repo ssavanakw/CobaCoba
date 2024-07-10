@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class FixBossDarat : MonoBehaviour
 {
-
+    
     #region Public Variables
     public Transform rayCast;
     public LayerMask raycastMask;
@@ -39,8 +39,12 @@ public class FixBossDarat : MonoBehaviour
         intTimer = timer;
         anim = GetComponent<Animator>();
 
-        enemyHealthBar.SetActive(false);
+        
 
+    }
+    private void Start()
+    {
+        enemyHealthBar.SetActive(false);
     }
 
     // Update is called once per frame
@@ -51,7 +55,7 @@ public class FixBossDarat : MonoBehaviour
             BossMove();
         }
 
-        if (!InsideOfPoints() && !inRange & !anim.GetCurrentAnimatorStateInfo(0).IsName("HG_Attack"))
+        if (!InsideOfPoints() && !inRange & !anim.GetCurrentAnimatorStateInfo(0).IsName("BossAttack1"))
         {
             SelectTarget();
         }
@@ -80,7 +84,7 @@ public class FixBossDarat : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D trig)
+    void OnTriggerEnter2D(Collider2D trig)
     {
         if (trig.gameObject.tag == "Player")
         {
@@ -213,3 +217,4 @@ public class FixBossDarat : MonoBehaviour
 
 
 }
+

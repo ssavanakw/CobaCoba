@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerHealthBar : MonoBehaviour
 {
+    private SceneThing sceneThing;
+
     private Animator animator;
     private PlayerMovement playerMovement;
     public GameObject respawnPoint;
@@ -25,6 +28,7 @@ public class PlayerHealthBar : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         playerMovement = GetComponent<PlayerMovement>();
+        sceneThing = FindObjectOfType<SceneThing>();
 
         playerMovement.enabled = true; // Disable the PlayerMovement script
         currentHealth = maxHealth; // Set current health to maximum health when the game starts
@@ -48,11 +52,12 @@ public class PlayerHealthBar : MonoBehaviour
         {
             playerMovement.enabled = false; // Disable the PlayerMovement script
             animator.SetBool("isDead", true);
+            Invoke("Die", 1f);
         }
     }
     void Die()
     {
-        Destroy(gameObject); // Destroy the player object
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Reload the current scene
     }
 
 

@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class SceneThing : MonoBehaviour
 {
 
-    [SerializeField] private GameObject _startingSceneTransition;
-    [SerializeField] private GameObject _endingSceneTransition;
+    [SerializeField] public GameObject _startingSceneTransition;
+    [SerializeField] public GameObject _endingSceneTransition;
     [SerializeField] private int nextSceneBuildIndex;
 
     private bool isPaused = false;
@@ -45,6 +45,11 @@ public class SceneThing : MonoBehaviour
     private void LoadNextLevel()
     {
         SceneManager.LoadScene(nextSceneBuildIndex);
+    }
+
+    public void EnableEndingSceneTransition()
+    {
+        _endingSceneTransition.SetActive(true);
     }
 
     private void DisableEndingSceneTransition()
