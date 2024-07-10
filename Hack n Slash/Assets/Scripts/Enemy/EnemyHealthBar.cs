@@ -45,7 +45,8 @@ public class EnemyHealthBar : MonoBehaviour
         if (enemyCurrentHealth <= 0)
         {
             fixEnemyDarat.enabled = false; // Disable the PlayerMovement script
-            animator.SetBool("Dead", true);
+            animator.SetBool("isDead", true);
+            Invoke("Die", 1f);
         }
 
     }
@@ -53,7 +54,7 @@ public class EnemyHealthBar : MonoBehaviour
     void Die()
     {
 
-        Destroy(gameObject); // Destroy the player object
+        Destroy(gameObject);
     }
 
 
