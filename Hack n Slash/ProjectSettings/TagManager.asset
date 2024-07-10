@@ -17,7 +17,7 @@ TagManager:
   - Wall
   - Player
   - Enemy
-  - 
+  - Coins
   - 
   - 
   - 
@@ -49,4 +49,7 @@ TagManager:
     locked: 0
   - name: Wall
     uniqueID: 2679268819
+    locked: 0
+  - name: Coins
+    uniqueID: 4184295719
     locked: 0
