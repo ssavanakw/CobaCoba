@@ -10,7 +10,6 @@ public class PlayerHealthBar : MonoBehaviour
 
     private Animator animator;
     private PlayerMovement playerMovement;
-    public GameObject respawnPoint;
 
     [Header("Health Bar")]
     [SerializeField] public Slider healthBarSlider;
@@ -72,8 +71,12 @@ public class PlayerHealthBar : MonoBehaviour
     public void PlayerHeal(float healAmount)
     {
         currentHealth += healAmount; // Reduce current health by the damage amount
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
         currentHealth = Mathf.Clamp(currentHealth, 0f, maxHealth); // Clamp current health to ensure it stays within 0 and maxHealth
-        Debug.Log("Player takes " + healAmount + " damage."); // Log the damage amount
+        Debug.Log("Player heals " + healAmount); // Log the damage amount
 
     }
 

@@ -44,12 +44,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Coins
+    uniqueID: 4184295719
+    locked: 0
   - name: Ground
     uniqueID: 213114999
     locked: 0
   - name: Wall
     uniqueID: 2679268819
-    locked: 0
-  - name: Coins
-    uniqueID: 4184295719
     locked: 0
