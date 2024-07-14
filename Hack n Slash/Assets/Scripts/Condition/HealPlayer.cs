@@ -4,27 +4,35 @@ using UnityEngine;
 
 public class HealPlayer : MonoBehaviour
 {
-    public PlayerHealthBar playerHealth;
+    public int healAmount = 20;  // Amount of health to restore
+    public GameObject maxHealthText;  // Reference to the UI text object for max health message
+    public float maxHealthTextDuration = 1f;  // Duration to keep the max health text active
 
-    // Amount to heal the player
-    public float healAmount;
-
-    // This method is called when another collider enters the trigger collider attached to this GameObject
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Check if the object we collided with has the Player tag
-        if (other.CompareTag("Player"))
+        PlayerHealthBar playerHealth = collision.GetComponent<PlayerHealthBar>();
+        if (playerHealth != null)
         {
-            // Get the player's health script
-            PlayerHealthBar playerHealth = other.GetComponent<PlayerHealthBar>();
-            if (playerHealth != null)
+            if (playerHealth.currentHealth < playerHealth.maxHealth)
             {
-                // Heal the player
                 playerHealth.PlayerHeal(healAmount);
-
-                // Optionally, destroy this healing object after use
+                // Destroy the healing object after use
                 Destroy(gameObject);
             }
+            else
+            {
+                if (maxHealthText != null)
+                {
+                    StartCoroutine(ShowMaxHealthText());
+                }
+            }
         }
+    }
+
+    private IEnumerator ShowMaxHealthText()
+    {
+        maxHealthText.SetActive(true);
+        yield return new WaitForSeconds(maxHealthTextDuration);
+        maxHealthText.SetActive(false);
     }
 }
