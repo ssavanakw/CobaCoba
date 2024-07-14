@@ -7,6 +7,7 @@ public class HealPlayer : MonoBehaviour
     public int healAmount = 20;  // Amount of health to restore
     public GameObject maxHealthText;  // Reference to the UI text object for max health message
     public float maxHealthTextDuration = 1f;  // Duration to keep the max health text active
+    public Animator animatorHeal;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -16,8 +17,9 @@ public class HealPlayer : MonoBehaviour
             if (playerHealth.currentHealth < playerHealth.maxHealth)
             {
                 playerHealth.PlayerHeal(healAmount);
+                animatorHeal.SetTrigger("Hit");
                 // Destroy the healing object after use
-                Destroy(gameObject);
+                //Destroy(gameObject);
             }
             else
             {
@@ -27,6 +29,11 @@ public class HealPlayer : MonoBehaviour
                 }
             }
         }
+    }
+
+    void DestroyThisHeal()
+    {
+        Destroy(gameObject);
     }
 
     private IEnumerator ShowMaxHealthText()
