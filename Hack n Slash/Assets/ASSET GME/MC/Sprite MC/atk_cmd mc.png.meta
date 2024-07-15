@@ -113,10 +113,10 @@ TextureImporter:
       name: atk_cmd mc_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 61
-        width: 40
-        height: 50
+        x: 0
+        y: 60
+        width: 70
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: atk_cmd mc_1
       rect:
         serializedVersion: 2
-        x: 75
-        y: 61
-        width: 42
-        height: 51
+        x: 70
+        y: 60
+        width: 70
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: atk_cmd mc_2
       rect:
         serializedVersion: 2
-        x: 147
-        y: 61
-        width: 39
-        height: 51
+        x: 140
+        y: 60
+        width: 70
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: atk_cmd mc_3
       rect:
         serializedVersion: 2
-        x: 216
+        x: 210
         y: 60
-        width: 52
-        height: 50
+        width: 70
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: atk_cmd mc_4
       rect:
         serializedVersion: 2
-        x: 282
-        y: 61
-        width: 66
-        height: 50
+        x: 280
+        y: 60
+        width: 70
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +218,10 @@ TextureImporter:
       name: atk_cmd mc_5
       rect:
         serializedVersion: 2
-        x: 352
+        x: 350
         y: 60
-        width: 60
-        height: 51
+        width: 70
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +239,10 @@ TextureImporter:
       name: atk_cmd mc_6
       rect:
         serializedVersion: 2
-        x: 440
+        x: 420
         y: 60
-        width: 39
-        height: 51
+        width: 70
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,10 +260,10 @@ TextureImporter:
       name: atk_cmd mc_7
       rect:
         serializedVersion: 2
-        x: 507
+        x: 490
         y: 60
-        width: 42
-        height: 51
+        width: 70
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +281,10 @@ TextureImporter:
       name: atk_cmd mc_8
       rect:
         serializedVersion: 2
-        x: 580
+        x: 560
         y: 60
-        width: 48
-        height: 51
+        width: 70
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,10 +302,10 @@ TextureImporter:
       name: atk_cmd mc_9
       rect:
         serializedVersion: 2
-        x: 619
-        y: 80
-        width: 5
-        height: 4
+        x: 630
+        y: 60
+        width: 70
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,10 +323,10 @@ TextureImporter:
       name: atk_cmd mc_10
       rect:
         serializedVersion: 2
-        x: 650
+        x: 700
         y: 60
-        width: 43
-        height: 51
+        width: 70
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -336,48 +336,6 @@ TextureImporter:
       bones: []
       spriteID: 7aebe568d245a924d9324cbd1b3307df
       internalID: 1305229398
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: atk_cmd mc_11
-      rect:
-        serializedVersion: 2
-        x: 720
-        y: 60
-        width: 39
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 132fdad3d991820468e90a6ac4c0681f
-      internalID: 5437538
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: atk_cmd mc_12
-      rect:
-        serializedVersion: 2
-        x: 756
-        y: 79
-        width: 5
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a3532b898220b4a4b8decd1e0a318cfe
-      internalID: -1696773147
       vertices: []
       indices: 
       edges: []
@@ -398,7 +356,16 @@ TextureImporter:
       atk_cmd mc_10: 1305229398
       atk_cmd mc_11: 5437538
       atk_cmd mc_12: -1696773147
+      atk_cmd mc_13: 1553195341
+      atk_cmd mc_14: -2025794615
+      atk_cmd mc_15: 232022170
+      atk_cmd mc_16: -694130467
+      atk_cmd mc_17: 576578378
+      atk_cmd mc_18: 1773739825
+      atk_cmd mc_19: 989293691
       atk_cmd mc_2: -1646798160
+      atk_cmd mc_20: 244883585
+      atk_cmd mc_21: -1489848516
       atk_cmd mc_3: -1640106831
       atk_cmd mc_4: -2112745454
       atk_cmd mc_5: 1132418664
