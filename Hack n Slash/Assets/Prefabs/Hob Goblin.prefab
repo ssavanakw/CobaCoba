@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8712819904904619561}
   - component: {fileID: 1587867623441940529}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: TriggerArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5766400679868703846}
   - component: {fileID: 1180686949407549813}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: HitBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -448,8 +448,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   rayCastLength: 5
-  attackDistance: 0.8
-  moveSpeed: 2
+  attackDistance: 2
+  moveSpeed: 4
   timer: 3
   pointA: {fileID: 0}
   pointB: {fileID: 0}
@@ -766,7 +766,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6098881897415436147}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Attack1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -872,7 +872,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8153821181335396673}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Raycast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
