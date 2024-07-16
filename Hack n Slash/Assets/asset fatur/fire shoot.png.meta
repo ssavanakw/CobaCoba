@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,7 +108,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: fire shoot_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 16
+        width: 43
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef97d23c464d5d408ce4830a0802b64
+      internalID: -1174680698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire shoot_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 43
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f3594dfa321d034e82dafc20ad3d872
+      internalID: 64430459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire shoot_3
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 16
+        width: 43
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5f186cabc0aee240a23957e60027bb7
+      internalID: -1780183079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire shoot_4
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 14
+        width: 43
+        height: 24
+      alignment: 9
+      pivot: {x: 0.4806728, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1d7e08951e410d4dabfaa3a7b72624b
+      internalID: -520094241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire shoot_5
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 15
+        width: 43
+        height: 24
+      alignment: 9
+      pivot: {x: 0.47972533, y: 0.5000002}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc30d0bb5b67104fb1d66a46092dfa0
+      internalID: 1939005840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire shoot_6
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 24
+        height: 36
+      alignment: 9
+      pivot: {x: 0.7229271, y: 0.37470707}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa48843d227e9484baf56baf393feccb
+      internalID: 1153562684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire shoot_2
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 22
+        width: 11
+        height: 18
+      alignment: 9
+      pivot: {x: 0.49771118, y: 0.42993757}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 775af2aa89452ca46850b89ad4b78a50
+      internalID: -1896980292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +266,20 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fire shoot_0: -1174680698
+      fire shoot_1: 64430459
+      fire shoot_10: 1839793433
+      fire shoot_11: 1460837442
+      fire shoot_12: -1727457388
+      fire shoot_2: -1896980292
+      fire shoot_3: -1780183079
+      fire shoot_4: -520094241
+      fire shoot_5: 1939005840
+      fire shoot_6: 1153562684
+      fire shoot_7: -1703343018
+      fire shoot_8: -1294950043
+      fire shoot_9: -1841044918
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

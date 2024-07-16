@@ -48,7 +48,6 @@ public class PlayerMovement : MonoBehaviour
     float wallJumpTimer;
     public Vector2 wallJumpPower = new Vector2 (5f, 10f);
 
-
     void Update()
     {
         
@@ -200,11 +199,12 @@ public class PlayerMovement : MonoBehaviour
             Is.x *= -1f;
             transform.localScale = Is;
 
-            if(rb.velocity.y == 0f)
+            if (rb.velocity.y == 0f)
             {
                 dustFX.Play();
             }
-            
+
+
         }
     }
 
