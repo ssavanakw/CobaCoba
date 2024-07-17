@@ -123663,6 +123663,18 @@ PrefabInstance:
       value: Portal
       objectReference: {fileID: 0}
     - target: {fileID: 3404997225092867200, guid: ec3975f65c35a9a4eae164d471190eb8, type: 3}
+      propertyPath: sceneThing
+      value: 
+      objectReference: {fileID: 1781228368}
+    - target: {fileID: 3404997225092867200, guid: ec3975f65c35a9a4eae164d471190eb8, type: 3}
+      propertyPath: coinsRequired
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3404997225092867200, guid: ec3975f65c35a9a4eae164d471190eb8, type: 3}
+      propertyPath: moreCoinsText
+      value: 
+      objectReference: {fileID: 7047427713040871743, guid: 6be5648782279b04f9d232f7ef1feed0, type: 3}
+    - target: {fileID: 3404997225092867200, guid: ec3975f65c35a9a4eae164d471190eb8, type: 3}
       propertyPath: sceneIndexToLoad
       value: 4
       objectReference: {fileID: 0}
