@@ -78,6 +78,9 @@ public class PlayerMovement : MonoBehaviour
     {
         if (jumpsRemaining > 0)
         {
+            animator.SetBool("isAttacking", false);
+            animator.SetBool("isRangeAttack", false);
+
             // Hold down jump for full height
             if (context.performed)
             {
@@ -126,17 +129,19 @@ public class PlayerMovement : MonoBehaviour
 
     private void GroundCheck()
     {
-        // Back to maxJumps
-        if(Physics2D.OverlapBox(groundCheckPos.position, groundCheckSize, 0, groundLayer))
+        if (Physics2D.OverlapBox(groundCheckPos.position, groundCheckSize, 0, groundLayer))
         {
             jumpsRemaining = maxJumps;
             isGrounded = true;
+
+            // Tambahan ini
+            isWallJumping = false;
         }
         else
         {
             isGrounded = false;
         }
-        
+
     }
 
     private bool WallCheck()

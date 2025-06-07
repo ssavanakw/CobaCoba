@@ -44,6 +44,7 @@ Transform:
   - {fileID: 1227429167560576145}
   - {fileID: 8435548244586159640}
   - {fileID: 8584091885800864436}
+  - {fileID: 3024679299013576625}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8577538764299372123
@@ -292,6 +293,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 3dd1c9b7-4cb8-499e-b291-9a4f3e43b346
     m_ActionName: Player/Attack[/Keyboard/j]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 1bd9410a-d6c6-4ba0-a1ec-0e5d3aa7b242
+    m_ActionName: Player/RangeAttack[/Keyboard/k]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -389,7 +394,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36c002fbfa3d7cc4aa37fe86ebf3aa79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnPoint: {fileID: 0}
   healthBarSlider: {fileID: 0}
   easeHealthBarSlider: {fileID: 0}
   maxHealth: 100
@@ -409,6 +413,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 8681683834317726711}
   attack1: {fileID: 6585958728575837920}
+  magicMissilePrefab: {fileID: 7478368474298382804, guid: dc93de3b16815f74db0bac9f56e1cd40, type: 3}
+  magicMissileSpawnPoint: {fileID: 3024679299013576625}
   damage: 10
   enemyLayer:
     serializedVersion: 2
@@ -454,6 +460,37 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.162, y: -0.155, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5666223509802591859}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5786934510667158904
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3024679299013576625}
+  m_Layer: 7
+  m_Name: Projectile
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3024679299013576625
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5786934510667158904}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.35, y: -0.152, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
